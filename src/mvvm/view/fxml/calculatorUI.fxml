@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="222.0" prefWidth="316.0" style="-fx-alignment: center; -fx-background-color: linear-gradient(to right, #dd5e89, #f7bb97);" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mvvm.view.CalculatorView">
+    <children>
+        <HBox>
+            <children>
+                <Label fx:id="operator" prefHeight="50.0" prefWidth="31.0" textAlignment="RIGHT" textFill="WHITE">
+                    <font>
+                        <Font name="Roboto Regular" size="20.0" />
+                    </font>
+                </Label>
+                <Label fx:id="display" prefHeight="50.0" prefWidth="304.0" textAlignment="RIGHT" textFill="WHITE">
+                    <font>
+                        <Font name="Roboto Regular" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <HBox prefHeight="158.0" prefWidth="322.0" style="-fx-alignment: center;">
+            <children>
+                <Group>
+                    <children>
+                        <JFXButton fx:id="seven" layoutY="2.0" onAction="#on7button" prefHeight="43.0" prefWidth="63.0" text="7" textFill="WHITE">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton fx:id="eight" layoutX="63.0" layoutY="2.0" onAction="#on8button" prefHeight="43.0" prefWidth="63.0" text="8" textFill="WHITE">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton fx:id="nine" layoutX="126.0" layoutY="2.0" onAction="#on9button" prefHeight="43.0" prefWidth="63.0" text="9" textFill="WHITE">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton fx:id="four" layoutY="45.0" onAction="#on4button" prefHeight="43.0" prefWidth="63.0" text="4" textFill="WHITE">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton fx:id="five" layoutX="63.0" layoutY="45.0" onAction="#on5button" prefHeight="43.0" prefWidth="63.0" text="5" textFill="WHITE">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton fx:id="six" layoutX="126.0" layoutY="45.0" onAction="#on6button" prefHeight="43.0" prefWidth="63.0" text="6" textFill="WHITE">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton fx:id="one" layoutY="88.0" onAction="#on1button" prefHeight="43.0" prefWidth="63.0" text="1" textFill="WHITE">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton fx:id="two" layoutX="63.0" layoutY="88.0" onAction="#on2button" prefHeight="43.0" prefWidth="63.0" text="2" textFill="WHITE">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton fx:id="three" layoutX="126.0" layoutY="88.0" onAction="#on3button" prefHeight="43.0" prefWidth="63.0" text="3" textFill="WHITE">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton fx:id="zero" layoutY="131.0" onAction="#on0button" prefHeight="43.0" prefWidth="63.0" text="0" textFill="WHITE">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton id="on-button" fx:id="onButton" layoutX="63.0" layoutY="131.0" onAction="#onONbutton" prefHeight="43.0" prefWidth="63.0" text="ON" textFill="WHITE">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton fx:id="bullet" layoutX="126.0" layoutY="131.0" onAction="#onBulletButton" prefHeight="43.0" prefWidth="63.0" text="." textFill="WHITE">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </JFXButton>
+                    </children>
+                </Group>
+                <Group>
+                    <children>
+                        <JFXButton fx:id="percentage" onAction="#onPercentageButton" prefHeight="43.0" prefWidth="63.0" text="\%" textFill="WHITE">
+                            <font>
+                                <Font name="Roboto" size="20.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton fx:id="multiply" layoutY="43.0" onAction="#onMultiplyButton" prefHeight="43.0" prefWidth="63.0" text="×" textFill="WHITE">
+                            <font>
+                                <Font name="Roboto" size="20.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton fx:id="plus" layoutY="86.0" maxHeight="86.0" onAction="#onPlusButton" prefHeight="86.0" prefWidth="63.0" text="+" textFill="WHITE">
+                            <font>
+                                <Font name="Roboto" size="20.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton fx:id="sign" layoutX="63.0" onAction="#onSignButton" prefHeight="43.0" prefWidth="63.0" text="+/-" textFill="WHITE">
+                            <font>
+                                <Font name="Roboto" size="20.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton fx:id="division" layoutX="63.0" layoutY="43.0" onAction="#onDivisionButton" prefHeight="43.0" prefWidth="63.0" text="÷" textFill="WHITE">
+                            <font>
+                                <Font name="Roboto" size="20.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton fx:id="minus" layoutX="63.0" layoutY="86.0" onAction="#onMinusButton" prefHeight="43.0" prefWidth="63.0" text="-" textFill="WHITE">
+                            <font>
+                                <Font name="Roboto" size="20.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton fx:id="equals" layoutX="63.0" layoutY="129.0" onAction="#onEqualsButton" prefHeight="43.0" prefWidth="63.0" text="=" textFill="WHITE">
+                            <font>
+                                <Font name="Roboto" size="20.0" />
+                            </font>
+                        </JFXButton>
+                    </children>
+                </Group>
+            </children>
+        </HBox>
+    </children>
+</VBox>
